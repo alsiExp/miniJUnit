@@ -1,0 +1,1 @@
+package org.jugru.miniJUnit.asserts;import org.jugru.miniJUnit.exceptions.AssertionException;public class Assert {    public static void assertTrue(boolean expression, String message) {        if(!expression) {            throw new AssertionException(message);        }    }}

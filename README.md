@@ -7,3 +7,7 @@
 mvn clean package exec:java  - для запуска со сканированием package по умолчанию (org.jugru.miniJUnit)
  
 mvn clean package exec:java -Dexec.args="some.package.name" - для запуска  со сканированием указанного package. На данный момент поддерживаются только со сканированием package 3 уровня.
+
+## Тестирование
+$ mvn clean package exec:java -Dexec.args="org.jugru.miniJUnitTest" - запустит тесты для тестирования библиотеки тестми библиотеки. 
+Ожидаемый вывод - все найденные тесты пройдут успешно
